@@ -1,12 +1,13 @@
 .header
+    z-index: 20
     position: fixed
     top: 0
     left: 0
-    padding: 1rem
+    padding: .75rem 1rem
     border-bottom: .5px solid #cccccc
+    height: 75px
     width: 100%
     background: #ffffff
-
 
 .nav
     margin: 0 auto
@@ -16,6 +17,7 @@
     align-items: center
     width: 100%
     max-width: 1170px
+    height: 100%
 
     &__logo
         width: 100%
@@ -40,3 +42,32 @@
 
     &__tel p 
         color: rgba(0, 0, 0, .5)
+
+@media screen and ( max-width:  1024px)
+    .nav
+
+        &__list
+            display: none
+            position: fixed
+            top: 75px
+            left: 0
+            padding: 1rem
+            width: 250px
+            height: calc(100vh - 75px)
+            background: #ffffff
+
+            &-item
+                display: block
+                margin: 0
+                padding: 1rem 0
+                border-bottom: .5px solid rgba(0, 0, 0, .1)
+
+            &-item:nth-child(1)
+                border-top: .5px solid rgba(0, 0, 0, .1)
+
+        &__logo
+            max-width: 150px
+
+        &__btn
+            padding: .45rem .75rem
+            font-size: .9rem
