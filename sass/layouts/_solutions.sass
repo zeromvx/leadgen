@@ -1,0 +1,81 @@
+.solutions
+    padding: 3rem 1rem
+    background: #F9F8F8
+
+    .wrapper
+        margin: 0 auto
+        width: 100%
+        max-width: 1170px
+        text-align: center
+
+    &__title
+        font-size: 2rem
+        font-weight: 500
+
+    &__list 
+        margin-top: 4rem
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        width: 100%
+
+        &-item
+            margin: 10px
+            padding: 1rem
+            border-radius: 7px
+            width: 100%
+            max-width: 30%
+            background: #ffffff
+            box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1)
+            
+        .list-item__title
+            margin: 1rem 0 1.5rem
+            font-size: 1.25rem
+
+        .list-item__descr
+            color: rgba(21, 21, 21, 0.8)
+            
+.list-logo
+    margin: 0 auto
+    position: relative
+    width: 115px
+    height: 100px
+
+    &__bg
+        z-index: 0
+        position: absolute
+        bottom: 0
+        left: 0
+        border-radius: 50%
+        width: 82px
+        height: 82px
+        background: #EAEFFF
+
+    &__icon
+        z-index: 1
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 64px
+        height: 64px
+
+@media screen and ( max-width: 1024px )
+    .solutions
+
+        &__list
+
+            &-item
+                width: 100%
+                max-width: 45%
+
+@media screen and ( max-width: 600px )
+    .solutions
+
+        &__list
+            justify-content: center
+
+            &-item
+                width: 100%
+                max-width: 370px
