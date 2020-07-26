@@ -3,7 +3,7 @@
     position: fixed
     top: 0
     left: 0
-    padding: .75rem 1rem
+    padding: .75rem .4rem
     border-bottom: .5px solid #cccccc
     height: 75px
     width: 100%
@@ -19,13 +19,10 @@
     max-width: 1170px
     height: 100%
 
-    &__logo
-        width: 100%
-        max-width: 200px
-
     &__logo img
-        display: block
-        max-width: 100%
+        display: inline-block
+        width: 100%
+        max-width: 150px
         height: auto
 
     &__list
@@ -40,21 +37,34 @@
         &-link:hover
             color: #3061FF
 
-    &__tel p 
-        color: rgba(0, 0, 0, .5)
+@keyframes fadeEffect 
+    from 
+        opacity: 0
+    to 
+        opacity: 1
+
 
 @media screen and ( max-width:  1024px)
+
+    .header
+        padding: 0 .4rem
+        height: 55px
+
     .nav
 
         &__list
             display: none
             position: fixed
-            top: 75px
+            top: 55px
             left: 0
             padding: 1rem
             width: 250px
             height: calc(100vh - 75px)
             background: #ffffff
+            animation: fadeEffect .5s
+
+            &--active
+                display: block
 
             &-item
                 display: block
@@ -65,9 +75,14 @@
             &-item:nth-child(1)
                 border-top: .5px solid rgba(0, 0, 0, .1)
 
-        &__logo
-            max-width: 150px
+        &__btn
+            font-size: .9rem
+
+@media screen and ( max-width:  425px)
+     .nav
+
+        &__logo img
+            max-width: 140px
 
         &__btn
-            padding: .45rem .75rem
             font-size: .9rem
