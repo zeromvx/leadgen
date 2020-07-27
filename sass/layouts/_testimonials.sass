@@ -1,0 +1,61 @@
+.testimonials
+    padding: 3rem 1rem
+
+    &__title
+        font-size: 2rem
+
+    &__content
+        margin-top: 2rem
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: flex-start
+
+.feedback
+    margin: 1rem
+    position: relative
+    border-radius: 10px
+    width: 100%
+    max-width: 350px
+    text-align: left
+    background: #ffffff
+    box-shadow: none
+    filter: drop-shadow(0 2px 8px rgba(75, 81, 91, 0.14))
+
+    &::after
+        content: ""
+        position: absolute
+        bottom: -20px;
+        left: 62px;
+        border-style: solid;
+        border-width: 22px 32px 0 0;
+        border-color: #ffffff transparent transparent transparent;
+        width: 0
+        height: 0
+
+    &__header
+        padding: 1rem 2rem
+        border-bottom: 1px solid #ebebeb
+        display: flex
+        align-items: center
+
+    &__logo
+        display: inline-block
+        margin-right: 2rem
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        background: #cccccc
+
+        &-descr
+            display: inline-block
+
+    &__body
+        padding: 2rem
+
+    &__quote
+        margin-bottom: 1rem
+        color: rgba(21, 21, 21, 0.8)
+        font-size: 1.1rem
+        font-weight: 300
+        line-height: 1.55

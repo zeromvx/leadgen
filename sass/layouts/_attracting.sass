@@ -1,0 +1,91 @@
+.attracting
+    padding: 5rem 1rem
+    background: #2F2F2F
+    color: #ffffff
+
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+
+    &__content
+        width: 100%
+        max-width: 450px
+        text-align: left
+
+    &__title
+        font-size: 2rem
+
+    &__tabs
+        display: flex
+        
+        &-item
+            padding: .5rem 0
+            margin: .5rem 1rem 1rem 0
+            border-bottom: 2px solid rgba(#ffffff, .5)
+            color: rgba(#ffffff, .6)
+            font-size: 1.2rem
+            cursor: pointer
+
+        &-item--active
+            border-bottom: 2px solid #007bff
+            color: #ffffff
+
+    &__image img
+        display: block
+        max-width: 100%
+        height: auto
+
+.tab
+
+    &-two
+        display: none
+
+    &--active 
+        display: block
+
+    &__item
+        margin-top: 1rem
+
+    &__descr
+        color: rgba(#ffffff, .5)
+
+    &__list
+
+        &-item
+            margin-top: .5rem
+            padding-left: 1.5rem
+            position: relative
+
+        &-item::before
+            content: ""
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            border-radius: 50%
+            width: 6px
+            height: 6px
+            background: #eaef57
+
+    &__btn
+        padding: .75rem 2rem
+
+        &:hover
+            border-color: #eaef57
+            background: #eaef57
+            color: #000000
+
+@media screen and ( max-width: 1170px )
+    .attracting
+
+        &__wrapper
+            justify-content: center
+
+        &__content
+            margin-bottom: 2rem
+
+@media screen and ( max-width: 425px )
+    .attracting
+        padding: 2rem 1rem
