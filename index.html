@@ -32,18 +32,23 @@
             <ul class="nav__list">
 
                 <li class="nav__list-item">
-                    <a href="" class="nav__list-link">Home</a>
+                    <a href="#home" class="nav__list-link">Home</a>
                 </li>
 
                 <li class="nav__list-item">
-                    <a href="" class="nav__list-link">About Us</a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="" class="nav__list-link">Typography</a>
+                    <a href="#about" class="nav__list-link">About Us</a>
                 </li>
 
                 <li class="nav__list-item">
-                    <a href="" class="nav__list-link">Contacts</a>
+                    <a href="#services" class="nav__list-link">Services</a>
+                </li>
+
+                <li class="nav__list-item">
+                    <a href="#testimonials" class="nav__list-link">Testimonials</a>
+                </li>
+
+                <li class="nav__list-item">
+                    <a href="#clients" class="nav__list-link">Clients</a>
                 </li>
             </ul>
             <!-- /.nav__list -->
@@ -58,7 +63,7 @@
 
     <main class="main">
         <!-- home -->
-        <section class="home">
+        <section class="home" id="home">
 
             <div class="home__content-wrap home__item">
 
@@ -84,7 +89,7 @@
         <!-- /.home -->
 
         <!-- solutions -->
-        <section class="solutions">
+        <section class="solutions" id="about">
             <div class="wrapper">
 
                 <h2 class="solutions__title">Professional Marketing Solutions</h2>
@@ -174,32 +179,46 @@
         <!-- /.counter -->
 
         <!-- attracting -->
-        <section class="attracting">
+        <section class="attracting" id="services">
             <div class="wrapper attracting__wrapper">
 
                 <div class="attracting__content">
+                    
                     <h2 class="attracting__title">Let Us Help You Attract More Clients</h2>
+
                     <ul class="attracting__tabs">
-                        <li class="attracting__tabs-item attracting__tabs-item--active" data-target="tab-one">What you
-                            get</li>
-                        <li class="attracting__tabs-item" data-target="tab-two">How we work</li>
+                        <li class="attracting__tabs-item attracting__tabs-item--active" data-target="tab-one">
+                            What youget
+
+                        </li>
+                        <li class="attracting__tabs-item" data-target="tab-two">
+                            How we work
+                        </li>
                     </ul>
 
                     <div class="tab tab-one" data-target="tab-one">
                         <p class="tab__descr tab__item">
-                            Our agency works to ensure the best quality of marketing solutions for our clients and their
-                            businesses. Our approach features:
+                            Working with us you can lift the web reputation of your company higher than ever. We can
+                            offer you all advantages of e-marketing including:
                         </p>
 
                         <ul class="tab__list tab__item">
-                            <li class="tab__list-item">Initial consultation with the client;</li>
-                            <li class="tab__list-item">Planning & analysis;</li>
-                            <li class="tab__list-item">Marketing campaign implementation.</li>
+                            <li class="tab__list-item">
+                                Faster response to the end user;
+                            </li>
+                            <li class="tab__list-item">
+                                Increased exposure of products and services;
+                            </li>
+                            <li class="tab__list-item">
+                                Boundless universal accessibility.
+                            </li>
                         </ul>
+
                         <a href="#" class="btn tab__btn tab__item">Learn more</a>
                     </div>
 
                     <div class="tab tab-two" data-target="tab-two">
+
                         <p class="tab__descr tab__item">
                             Our agency works to ensure the best quality of marketing solutions for our clients and their
                             businesses. Our approach features:
@@ -217,11 +236,12 @@
                 <div class="attracting__image">
                     <img src="images/attracting.png" alt="attracting">
                 </div>
+
             </div>
         </section>
         <!-- /.attracting -->
 
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="wrapper testimonials__wrapper">
 
                 <h2 class="testimonials__title">Testimonials</h2>
@@ -235,6 +255,7 @@
                             </div>
                             <figcaption class="feedback__logo-descr">
                                 <h3>Ann Smith</h3>
+
                                 <p>Regular Client</p>
                             </figcaption>
                         </figure>
@@ -253,7 +274,7 @@
 
                             </div>
                             <figcaption class="feedback__logo-descr">
-                                <h3>Ann Smith</h3>
+                                <h3>Jane Pearson</h3>
                                 <p>Regular Client</p>
                             </figcaption>
                         </figure>
@@ -271,7 +292,7 @@
 
                             </div>
                             <figcaption class="feedback__logo-descr">
-                                <h3>Ann Smith</h3>
+                                <h3>John Doe</h3>
                                 <p>Regular Client</p>
                             </figcaption>
                         </figure>
@@ -287,7 +308,7 @@
             </div>
         </section>
 
-        <section class="clients">
+        <section class="clients" id="clients">
             <div class="wrapper">
 
                 <h2 class="clients__title">Our Clients</h2>
@@ -372,10 +393,11 @@
             <div class="footer__nav footer__item">
                 <h3 class="footer__title">Quick Links</h3>
                 <ul class="footer__list">
-                    <li class="footer__list-item"><a href="">Home</a></li>
-                    <li class="footer__list-item"><a href="">About us</a></li>
-                    <li class="footer__list-item"><a href="">Testimonials</a></li>
-                    <li class="footer__list-item"><a href="">Clients</a></li>
+                    <li class="footer__list-item"><a href="#home">Home</a></li>
+                    <li class="footer__list-item"><a href="#about">About us</a></li>
+                    <li class="footer__list-item"><a href="#services">Services</a></li>
+                    <li class="footer__list-item"><a href="#testimonials">Testimonials</a></li>
+                    <li class="footer__list-item"><a href="#clients">Clients</a></li>
                 </ul>
             </div>
             <!-- /.footer__nav -->

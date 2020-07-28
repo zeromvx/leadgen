@@ -38,6 +38,7 @@
         height: auto
 
 .tab
+    animation: smooth 1s
 
     &-two
         display: none
@@ -76,6 +77,12 @@
             border-color: #eaef57
             background: #eaef57
             color: #000000
+
+@keyframes smooth
+    0%
+        opacity: 0
+    100%
+        opacity: 1
 
 @media screen and ( max-width: 1170px )
     .attracting

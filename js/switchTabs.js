@@ -1,11 +1,11 @@
-const tabs = document.querySelectorAll('.attracting__tabs-item');
-const tabsContent = document.querySelectorAll('.tab');
+const tabs = document.querySelectorAll('.attracting__tabs-item'),
+    tabsContent = document.querySelectorAll('.tab');
 
 tabs.forEach((tabHeader) => {
     tabHeader.addEventListener('click', switchTab);
 });
 
-function switchTab(e) {
+function switchTab() {
 
     for (let item of tabsContent) {
         
