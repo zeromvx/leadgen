@@ -1,0 +1,38 @@
+.world
+    padding: 3.5rem 1rem
+    background: #2F2F2F
+
+    &__wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__image
+        opacity: .3
+
+    &__content
+        margin-left: 3.5rem
+        width: 100%
+        max-width: 500px
+        color: #ffffff
+        text-align: left
+
+        &-item
+            margin: 1rem 0
+
+    &__btn
+        padding: .75rem 2rem
+        border-color: #3061FF
+        background: #3061FF
+        color: #ffffff
+
+@media screen and ( max-width: 1024px )
+    .world
+        &__wrapper
+            flex-direction: column-reverse
+
+        &__content
+            margin-left: 0
+            margin-bottom: 2rem
+
+    

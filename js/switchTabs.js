@@ -5,17 +5,20 @@ tabs.forEach((tabHeader) => {
     tabHeader.addEventListener('click', switchTab);
 });
 
-function switchTab() {
-    
-    tabs.forEach((item) => {
-        item.classList.toggle('attracting__tabs-item--active');
-    });
+function switchTab(e) {
 
-    tabsContent.forEach((tabContent) => {
-        if (this.dataset['target'] != tabContent.dataset['target']) {
-            tabContent.style.display = "none";
+    for (let item of tabsContent) {
+        
+        if (this.dataset['target'] != item.dataset['target']) {
+            item.style.display = "none";
         } else {
-            tabContent.style.display = "block";
+            item.style.display = "block";
         }
-    });
+    }
+
+    for (let tab of tabs) {
+        tab.classList.remove('attracting__tabs-item--active');
+    }
+
+    this.classList.add('attracting__tabs-item--active');
 }
